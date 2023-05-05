@@ -18,4 +18,18 @@
 	<url-pattern>/sq</url-pattern>
 </servlet-mapping>
 
+<servlet>
+	<servlet-name>contextServlet</servlet-name>
+	<servlet-class>ContextServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>contextServlet</servlet-name>
+	<url-pattern>/ctx</url-pattern>
+</servlet-mapping>
+
+
+<context-param>
+	<param-name>name</param-name>
+	<param-value>Shivang</param-value>
+</context-param>
 </web-app>
