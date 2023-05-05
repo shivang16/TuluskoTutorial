@@ -7,8 +7,10 @@ import javax.servlet.http.HttpServletResponse;
 
 public class SqServlet extends HttpServlet{
 
-	public void doPost(HttpServletRequest req,HttpServletResponse res) throws IOException {
-		int k = (int) req.getAttribute("kValue");
+	public void service(HttpServletRequest req,HttpServletResponse res) throws IOException {
+//		int k = (int) req.getAttribute("kValue");
+		int k = Integer.parseInt(req.getParameter("kValue"));
+		
 		k*=k;
 		PrintWriter out = res.getWriter();
 		out.println("Output is: "+ k);
