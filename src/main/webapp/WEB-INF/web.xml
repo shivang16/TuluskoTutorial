@@ -28,6 +28,20 @@
 </servlet-mapping>
 
 
+<servlet>
+	<servlet-name>configServlet</servlet-name>
+	<servlet-class>ConfigServlet</servlet-class>
+	<init-param>
+		<param-name>name</param-name>
+		<param-value>Alex</param-value>
+	</init-param>
+	
+</servlet>
+<servlet-mapping>
+	<servlet-name>configServlet</servlet-name>
+	<url-pattern>/cnf</url-pattern>
+</servlet-mapping>
+
 <context-param>
 	<param-name>name</param-name>
 	<param-value>Shivang</param-value>
