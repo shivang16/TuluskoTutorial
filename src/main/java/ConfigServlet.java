@@ -15,6 +15,7 @@ public class ConfigServlet extends HttpServlet{
 		
 		PrintWriter out = res.getWriter();
 		
+		
 		ServletConfig cnf = getServletConfig();
 		
 		out.print("My name is: "+cnf.getInitParameter("name"));
